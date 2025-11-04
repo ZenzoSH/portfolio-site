@@ -1,0 +1,504 @@
+/* ========================================
+   CSS CUSTOM PROPERTIES (COLOR PALETTE)
+   ======================================== */
+:root {
+    --lavender-web: #eae8ffff;
+    --platinum: #d8d5dbff;
+    --french-gray: #adacb5ff;
+    --gunmetal: #2d3142ff;
+    --uranian-blue: #b0d7ffff;
+}
+
+/* ========================================
+   GLOBAL RESET & BASE STYLES
+   ======================================== */
+
+/* Reset default margins and paddings for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes width/height calculations easier */
+}
+
+/* Base body styles - applies to entire page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6; /* Improves text readability */
+    color: var(--gunmetal); /* Dark text color */
+    background-color: var(--lavender-web); /* Light background */
+}
+
+/* Smooth scrolling when clicking navigation links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ========================================
+   NAVIGATION BAR STYLES
+   ======================================== */
+
+/* Main navigation container - sticky means it stays at top when scrolling */
+.main-navigation {
+    background-color: var(--gunmetal);
+    padding: 1rem 0;
+    position: sticky; /* Keeps nav at top of page */
+    top: 0;
+    z-index: 100; /* Ensures nav stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Container to center navigation content */
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the container */
+    padding: 0 2rem;
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Logo left, links right */
+    align-items: center; /* Vertically center items */
+}
+
+/* Logo/brand text styling */
+.logo {
+    color: var(--uranian-blue);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navigation links list - remove default list styling */
+.nav-links {
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Horizontal layout */
+    gap: 2rem; /* Space between links */
+}
+
+/* Individual navigation link styling */
+.nav-links a {
+    color: var(--lavender-web);
+    text-decoration: none; /* Remove underline */
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+    color: var(--uranian-blue);
+}
+
+/* ========================================
+   HERO SECTION STYLES
+   ======================================== */
+
+/* Hero section - first big section with intro */
+.hero-section {
+    background-color: var(--gunmetal);
+    color: var(--lavender-web);
+    min-height: 100vh; /* Takes full viewport height */
+    display: flex; /* Centers content vertically and horizontally */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Container for hero content */
+.hero-content {
+    max-width: 800px;
+}
+
+/* Main hero title (your name) */
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--uranian-blue);
+}
+
+/* Subtitle under your name */
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--platinum);
+}
+
+/* Hero description text */
+.hero-description {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: var(--lavender-web);
+}
+
+/* Call-to-action button */
+.cta-button {
+    display: inline-block;
+    background-color: var(--uranian-blue);
+    color: var(--gunmetal);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Button hover effect - grows slightly */
+.cta-button:hover {
+    background-color: var(--lavender-web);
+    transform: scale(1.05); /* Makes button 5% bigger */
+}
+
+/* ========================================
+   CONTAINER & SECTION STYLES
+   ======================================== */
+
+/* Reusable container for centering content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Section title styling (used in all sections) */
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--gunmetal);
+}
+
+/* ========================================
+   ABOUT SECTION STYLES
+   ======================================== */
+
+.about-section {
+    padding: 5rem 0;
+    background-color: var(--platinum);
+}
+
+/* About text content container */
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* About section paragraphs */
+.about-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    text-align: justify; /* Changed to justify for better readability */
+    color: var(--gunmetal);
+    line-height: 1.8; /* Extra line height for longer paragraphs */
+}
+
+/* ========================================
+   SKILLS SECTION STYLES
+   ======================================== */
+
+.skills-section {
+    padding: 5rem 0;
+    background-color: var(--lavender-web);
+}
+
+/* Grid layout for skill cards - 3 columns */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 2rem; /* Space between cards */
+}
+
+/* Individual skill card styling */
+.skill-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px; /* Rounded corners */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Skill card hover effect - lifts up */
+.skill-card:hover {
+    transform: translateY(-10px); /* Moves card up 10px */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+/* Skill title in each card */
+.skill-title {
+    color: var(--gunmetal);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Skill description text */
+.skill-description {
+    color: var(--french-gray);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* ========================================
+   PROJECTS SECTION STYLES
+   ======================================== */
+
+.projects-section {
+    padding: 5rem 0;
+    background-color: var(--platinum);
+}
+
+/* Grid layout for project cards - 3 columns */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* Individual project card */
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden; /* Keeps content inside rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Project card hover effect */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Project image container */
+.project-image {
+    width: 100%;
+    height: 250px; /* Increased height for better image display */
+    background-color: var(--uranian-blue);
+    position: relative; /* For positioning placeholder or image */
+    overflow: hidden;
+}
+
+/* Placeholder for project images (emojis version) */
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem; /* Larger emojis */
+    color: var(--gunmetal);
+    font-weight: bold;
+    background: linear-gradient(135deg, var(--uranian-blue) 0%, var(--lavender-web) 100%);
+}
+
+/* REAL IMAGE STYLING - when you add actual images */
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers container without distortion */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Image zoom effect on hover */
+.project-card:hover .project-img {
+    transform: scale(1.1); /* Zooms image by 10% on hover */
+}
+
+/* Project information container */
+.project-info {
+    padding: 1.5rem;
+}
+
+/* Project title */
+.project-title {
+    color: var(--gunmetal);
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+/* Project description */
+.project-description {
+    color: var(--french-gray);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    min-height: 80px; /* Ensures consistent card heights */
+}
+
+/* Project link/button */
+.project-link {
+    color: var(--gunmetal);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.project-link:hover {
+    color: var(--uranian-blue);
+}
+
+/* ========================================
+   CONTACT SECTION STYLES
+   ======================================== */
+
+.contact-section {
+    padding: 5rem 0;
+    background-color: var(--lavender-web);
+    text-align: center;
+}
+
+/* Contact intro paragraph */
+.contact-intro {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: var(--french-gray);
+}
+
+/* Contact information container */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Individual contact item */
+.contact-item {
+    margin-bottom: 1rem;
+}
+
+/* Contact labels (like "Email") */
+.contact-label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--gunmetal);
+}
+
+/* Contact link (email) */
+.contact-link {
+    color: var(--gunmetal);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--uranian-blue);
+}
+
+/* Social media links container */
+.social-links {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Individual social link */
+.social-link {
+    color: var(--gunmetal);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: var(--uranian-blue);
+}
+
+/* ========================================
+   FOOTER STYLES
+   ======================================== */
+
+.main-footer {
+    background-color: var(--gunmetal);
+    color: var(--lavender-web);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN (Mobile-friendly)
+   ======================================== */
+
+/* For tablets and smaller screens (768px and below) */
+@media screen and (max-width: 768px) {
+    
+    /* Stack navigation vertically on mobile */
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    /* Reduce hero title size on mobile */
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+    }
+    
+    /* Change skills and projects grid to 2 columns on tablet */
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+    }
+    
+    /* Reduce section title size */
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    /* Adjust project image height for smaller screens */
+    .project-image {
+        height: 200px;
+    }
+}
+
+/* For very small mobile screens (480px and below) */
+@media screen and (max-width: 480px) {
+    
+    /* Stack nav links vertically */
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    /* Smaller hero text */
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    /* Single column for skills and projects on mobile */
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr; /* Single column */
+    }
+    
+    /* Reduce container padding */
+    .container {
+        padding: 0 1rem;
+    }
+    
+    /* Adjust social links for mobile */
+    .social-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    /* Smaller project description minimum height */
+    .project-description {
+        min-height: auto;
+    }
+}
