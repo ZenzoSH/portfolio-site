@@ -1,7 +1,6 @@
-# Personal Portfolio Website
-
-A modern, responsive portfolio website showcasing my skills, projects, and contact information.
-Portfolio Site : [Portfolio](#https://portfoliozenzo.netlify.app/).
+## 🌐 Live Portfolio Website
+Check out my portfolio here:  
+👉 [portfoliozenzo.netlify.app](https://portfoliozenzo.netlify.app/)
 
 ## Project Overview
 
