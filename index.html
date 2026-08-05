@@ -4,167 +4,355 @@
     <!-- Meta tags for character encoding and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivendra Bhardwaj - ML Enthusiast</title>
-    
+    <title>Shivendra Bhardwaj — ML Enthusiast & Developer</title>
+    <meta name="description" content="Portfolio of Shivendra Bhardwaj — ML enthusiast, C++ & Python developer, building intelligent systems.">
+
+    <!-- Google Fonts: Inter for headings, JetBrains Mono for accents -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <!-- NAVIGATION BAR - Sticky header that stays at top -->
-    <nav class="main-navigation">
+
+    <!-- NAVIGATION BAR — Glassmorphic sticky header -->
+    <nav class="main-navigation" id="navbar">
         <div class="nav-container">
             <!-- Logo/Brand name on the left -->
-            <h1 class="logo">Shivendra</h1>
-            
-            <!-- Navigation links on the right -->
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <a href="#home" class="logo">SB<span class="logo-dot">.</span></a>
+
+            <!-- Hamburger menu button for mobile -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+
+            <!-- Navigation links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- HERO SECTION - First thing visitors see -->
+    <!-- HERO SECTION — Animated gradient background -->
     <section id="home" class="hero-section">
         <div class="hero-content">
-            <h1 class="hero-title">Hi, I'm Shivendra Bhardwaj</h1>
-            <p class="hero-subtitle">ML Enthusiast</p>
+            <!-- Status badge -->
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                Available for opportunities
+            </div>
+
+            <h1 class="hero-title">
+                Hi, I'm <span class="hero-name">Shivendra Bhardwaj</span>
+            </h1>
+            <p class="hero-subtitle">ML Enthusiast & Developer</p>
             <p class="hero-description">I understand Intelligence. 🤖</p>
+
             <!-- Call-to-action button -->
-            <a href="#contact" class="cta-button">Get In Touch</a>
+            <a href="#contact" class="cta-button">
+                <span>Get In Touch</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
-    <!-- ABOUT SECTION - Tell your story -->
+    <!-- ABOUT SECTION — Split layout with highlights -->
     <section id="about" class="about-section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p class="about-text">
-                    Hello! I'm an enthusiastic beginner developer currently diving into the 
-                    exciting worlds of Machine Learning, Artificial Intelligence, and C++. 
-                    I'm passionate about learning and exploring how technology can solve 
-                    real-world problems. Right now, I'm on a journey to understand the 
-                    fundamentals of ML/AI—from data preprocessing to building basic models—while 
-                    also strengthening my programming skills through C++. I believe in hands-on 
-                    learning and love working through projects and challenges that help me grow.
-                </p>
-                <p class="about-text">
-                    I'm still early in my learning journey, but I'm eager to collaborate with 
-                    others, ask questions, and contribute to projects. I enjoy the problem-solving 
-                    aspect of coding and the creative challenge of building intelligent systems. 
-                    As I continue to learn and grow, I'm excited to take on more complex projects 
-                    and expand my skillset in both AI and systems programming.
-                </p>
+            <h2 class="section-title reveal">
+                <span class="title-label">01</span>
+                About Me
+            </h2>
+            <div class="about-grid reveal">
+                <!-- Left: Quick highlights -->
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🎓</span>
+                        <div>
+                            <span class="highlight-label">Education</span>
+                            <span class="highlight-value">CS Student</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🤖</span>
+                        <div>
+                            <span class="highlight-label">Focus</span>
+                            <span class="highlight-value">Machine Learning & AI</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">💻</span>
+                        <div>
+                            <span class="highlight-label">Languages</span>
+                            <span class="highlight-value">C++ & Python</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🚀</span>
+                        <div>
+                            <span class="highlight-label">Passion</span>
+                            <span class="highlight-value">Building Intelligent Systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: About narrative -->
+                <div class="about-content">
+                    <p class="about-text">
+                        Hello! I'm an enthusiastic beginner developer currently diving into the
+                        exciting worlds of Machine Learning, Artificial Intelligence, and C++.
+                        I'm passionate about learning and exploring how technology can solve
+                        real-world problems. Right now, I'm on a journey to understand the
+                        fundamentals of ML/AI—from data preprocessing to building basic models—while
+                        also strengthening my programming skills through C++. I believe in hands-on
+                        learning and love working through projects and challenges that help me grow.
+                    </p>
+                    <p class="about-text">
+                        I'm still early in my learning journey, but I'm eager to collaborate with
+                        others, ask questions, and contribute to projects. I enjoy the problem-solving
+                        aspect of coding and the creative challenge of building intelligent systems.
+                        As I continue to learn and grow, I'm excited to take on more complex projects
+                        and expand my skillset in both AI and systems programming.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SKILLS SECTION - Showcase what you can do -->
+    <!-- SKILLS SECTION — Category-based cards with tech tags -->
     <section id="skills" class="skills-section">
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            
-            <!-- Grid of skill cards -->
+            <h2 class="section-title reveal">
+                <span class="title-label">02</span>
+                My Skills
+            </h2>
+
+            <!-- Languages bar -->
+            <div class="languages-bar reveal">
+                <span class="languages-label">Languages</span>
+                <div class="languages-list">
+                    <span class="lang-pill">C++ <span class="lang-note">Systems / Control</span></span>
+                    <span class="lang-pill">Python <span class="lang-note">ML / Automation</span></span>
+                    <span class="lang-pill">JavaScript <span class="lang-note">Basic</span></span>
+                </div>
+            </div>
+
+            <!-- 4-column category skill grid -->
             <div class="skills-grid">
-                
-                <!-- Individual skill card -->
-                <div class="skill-card">
-                    <h3 class="skill-title">HTML5</h3>
-                    <p class="skill-description">Semantic markup and modern HTML structure</p>
+
+                <!-- Perception -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <span class="skill-card-icon">👁️</span>
+                        <h3 class="skill-title">Perception</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">YOLO</span>
+                        <span class="tag">YOLOPv2</span>
+                        <span class="tag">CLRerNet</span>
+                        <span class="tag">Roboflow</span>
+                        <span class="tag">Jetson Orin NX</span>
+                    </div>
                 </div>
 
-                <div class="skill-card">
-                    <h3 class="skill-title">CSS3</h3>
-                    <p class="skill-description">Responsive design and animations</p>
+                <!-- ML / DL -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <span class="skill-card-icon">🧠</span>
+                        <h3 class="skill-title">ML / Deep Learning</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Supervised Learning</span>
+                        <span class="tag">Unsupervised / RL</span>
+                        <span class="tag">DeepLearning.AI</span>
+                    </div>
                 </div>
 
-                <div class="skill-card">
-                    <h3 class="skill-title">Python</h3>
-                    <p class="skill-description">Data manipulation, libraries like NumPy and Pandas for ML projects</p>
+                <!-- Robotics & Control -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <span class="skill-card-icon">🤖</span>
+                        <h3 class="skill-title">Robotics & Control</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">ROS2</span>
+                        <span class="tag">Bag Replay</span>
+                        <span class="tag">Multi-node Systems</span>
+                        <span class="tag">CarMaker</span>
+                    </div>
                 </div>
 
-                <div class="skill-card">
-                    <h3 class="skill-title">C++</h3>
-                    <p class="skill-description">Core programming concepts, object-oriented design, and efficient code</p>
+                <!-- Embedded & IoT -->
+                <div class="skill-card reveal">
+                    <div class="skill-card-header">
+                        <span class="skill-card-icon">⚡</span>
+                        <h3 class="skill-title">Embedded & IoT</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">ESP32</span>
+                        <span class="tag">ESP8266</span>
+                        <span class="tag">DHT11</span>
+                        <span class="tag">MQ135</span>
+                        <span class="tag">Blynk IoT</span>
+                    </div>
                 </div>
 
-                <div class="skill-card">
-                    <h3 class="skill-title">Machine Learning Basics</h3>
-                    <p class="skill-description">Fundamentals of supervised and unsupervised learning algorithms</p>
+            </div>
+
+            <!-- Tools row -->
+            <div class="tools-bar reveal">
+                <span class="languages-label">Tools</span>
+                <div class="languages-list">
+                    <span class="lang-pill">Git / GitHub</span>
+                    <span class="lang-pill">Docker</span>
+                    <span class="lang-pill">Linux</span>
+                    <span class="lang-pill">CarMaker</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION — Stat-first cards -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-label">03</span>
+                Achievements
+            </h2>
+
+            <div class="achievements-grid">
+
+                <!-- Card 1 -->
+                <div class="achievement-card achievement-card--featured reveal">
+                    <span class="achievement-stat">AIR-2</span>
+                    <span class="achievement-label">National Rank</span>
+                    <p class="achievement-context">SAE aBaja 2026 · 549.72 / 850 pts among 22 teams</p>
                 </div>
 
-                <div class="skill-card">
-                    <h3 class="skill-title">Git & GitHub</h3>
-                    <p class="skill-description">Version control and collaboration</p>
+                <!-- Card 2 -->
+                <div class="achievement-card reveal">
+                    <span class="achievement-stat">#1</span>
+                    <span class="achievement-label">Software Design</span>
+                    <p class="achievement-context">SAE aBaja 2026 · 76.21 / 100 — highest nationally</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="achievement-card reveal">
+                    <span class="achievement-stat">100/100</span>
+                    <span class="achievement-label">Perfect AEB Score</span>
+                    <p class="achievement-context">Autonomous Emergency Braking Event</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="achievement-card reveal">
+                    <span class="achievement-stat">#2</span>
+                    <span class="achievement-label">Lane Keep Assist</span>
+                    <p class="achievement-context">SAE aBaja 2026 · National Runner-up</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="achievement-card reveal">
+                    <span class="achievement-stat">#2</span>
+                    <span class="achievement-label">Endurance</span>
+                    <p class="achievement-context">SAE aBaja 2026 · National Runner-up</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- PROJECTS SECTION - Show your work -->
+    <!-- PROJECTS SECTION — Cards with tech tags -->
     <section id="projects" class="projects-section">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            
+            <h2 class="section-title reveal">
+                <span class="title-label">04</span>
+                My Projects
+            </h2>
+
             <!-- Grid of project cards -->
             <div class="projects-grid">
-                
+
                 <!-- Project 1: SpaceShip Fighter Game -->
-                <div class="project-card">
-                    <!-- Project image - you can add your own image here -->
+                <div class="project-card reveal">
                     <div class="project-image">
-                        
-                        
-                   
-                        <img src="images/ssfM.jpg" alt="SpaceShip Fighter Game" class="project-img"> 
+                        <img src="images/ssfM.jpg" alt="SpaceShip Fighter Game" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/ZenzoSH/SpaceShipFighter" target="_blank" rel="noopener noreferrer" class="overlay-link">View Project →</a>
+                        </div>
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">SpaceShip Fighter</h3>
                         <p class="project-description">
-                            A 2D space shooter game featuring collision detection, sprite animations, 
-                            and score tracking system developed in Python.
+                            A 2D space shooter game featuring collision detection, sprite animations,
+                            and score tracking system.
                         </p>
-                        <a href="https://github.com/ZenzoSH/SpaceShipFighter" target="_blank" rel="noopener noreferrer" class="project-link">View Project →</a>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pygame</span>
+                            <span class="tag">Game Dev</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 2: Weather API App -->
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-image">
-                        
                         <img src="images/weather.png" alt="Weather API App" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/ZenzoSH/weather-app-flask" target="_blank" rel="noopener noreferrer" class="overlay-link">View Project →</a>
+                        </div>
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Weather API App</h3>
                         <p class="project-description">
-                            Real-time weather application built with Flask that fetches live data 
-                            from weather APIs and displays forecasts with an intuitive interface.
+                            Real-time weather application built with Flask that fetches live data
+                            from weather APIs and displays forecasts.
                         </p>
-                        <a href="https://github.com/ZenzoSH/weather-app-flask" target="_blank" rel="noopener noreferrer" class="project-link">View Project →</a>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">API</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 3: Portfolio Template -->
-                <div class="project-card">
+                <div class="project-card reveal">
                     <div class="project-image">
-                      
-                        
-                        
                         <img src="images/portfolio.png" alt="Portfolio Template" class="project-img">
+                        <div class="project-overlay">
+                            <a href="https://github.com/ZenzoSH/portfolio-site" target="_blank" rel="noopener noreferrer" class="overlay-link">View Project →</a>
+                        </div>
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Portfolio Template</h3>
                         <p class="project-description">
-                            Clean and modern portfolio template for creatives and 
+                            Clean and modern portfolio template for creatives and
                             developers to showcase their work.
                         </p>
-                        <a href="https://github.com/ZenzoSH/portfolio-site" target="_blank" rel="noopener noreferrer" class="project-link">View Project →</a>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
                     </div>
                 </div>
 
@@ -172,38 +360,52 @@
         </div>
     </section>
 
-    <!-- CONTACT SECTION - Let people reach you -->
+    <!-- CONTACT SECTION — Clean with icon links -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-intro">
-                I'm always open to new opportunities and collaborations. 
+            <h2 class="section-title reveal">
+                <span class="title-label">05</span>
+                Get In Touch
+            </h2>
+            <p class="contact-intro reveal">
+                I'm always open to new opportunities and collaborations.
                 Feel free to reach out!
             </p>
-            
-            <!-- Contact information -->
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h3 class="contact-label">Email</h3>
-                    <a href="mailto:shivendra@example.com" class="contact-link">shivendra@example.com</a>
-                </div>
-                
-                <!-- Social media links - open in new tab -->
-                <div class="social-links">
-                    <a href="https://github.com/ZenzoSH" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
-                    <a href="https://linkedin.com/in/shiv207" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
-                    <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" class="social-link">Twitter</a>
-                </div>
+
+            <!-- Email CTA -->
+            <div class="contact-email reveal">
+                <a href="mailto:shivendra@example.com" class="email-button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <span>shivendra@example.com</span>
+                </a>
+            </div>
+
+            <!-- Social media links with SVG icons -->
+            <div class="social-links reveal">
+                <!-- GitHub -->
+                <a href="https://github.com/ZenzoSH" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/shiv207" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <!-- Twitter / X -->
+                <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER - Copyright and credits -->
+    <!-- FOOTER -->
     <footer class="main-footer">
         <div class="container">
-            <p class="footer-text">© 2024 Shivendra Bhardwaj. All rights reserved.</p>
+            <p class="footer-text">© <span id="year"></span> Shivendra Bhardwaj. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- JavaScript for animations and interactivity -->
+    <script src="script.js"></script>
 </body>
 </html>
